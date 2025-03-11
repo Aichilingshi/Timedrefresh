@@ -1,0 +1,49 @@
+<!--
+作者：刘瑜琦
+邮箱：1714105365@qq.com
+描述：chrome 定时刷新
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>定时刷新页面</title>
+    <style>
+        body {
+            width: 200px;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+        }
+        input {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+        button:disabled {
+            background-color: #ccc;
+        }
+        #countdown {
+            text-align: center;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+<input type="number" id="minutes" placeholder="分钟" min="0">
+<input type="number" id="seconds" placeholder="秒" min="0">
+<button id="start">开始</button>
+<button id="stop" disabled>停止</button>
+<script src="popup.js"></script>
+</body>
+</html>

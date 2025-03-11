@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "定时刷新页面",
+  "version": "1.0",
+  "description": "定时刷新当前页面，支持分钟和秒，循环执行",
+  "permissions": [
+    "activeTab",
+    "alarms",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
